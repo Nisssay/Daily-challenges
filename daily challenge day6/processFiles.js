@@ -5,26 +5,28 @@ const  writeFileAsync = require('./writeFileAsync.js');
 async function processFiles(filePaths) {
     try {
         
-            const filePath = filePaths;
-            // console.log(filePath);
-            const data = await readFileAsync(filePath);
+        const filePath = filePaths;
+            console.log(filePath);
+        const data = await readFileAsync(filePath);
             // console.log(data);
-        const modifiedData = data.toUpperCase();
+        let modifiedData = data.toUpperCase();
         // console.log(modifiedData)
-        let modifiedDatas = modifiedData.split('').reverse().join('');
+         modifiedData = modifiedData.split('').reverse().join('');
         // console.log(modifiedDatas)
 
-       let modifiedDatab = `${new Date().toISOString()}: ${modifiedDatas}`;
+        modifiedData = `${new Date().toISOString()}: ${modifiedData}`;
         // console.log(modifiedDatab)
 
-            const newFilePath = 'file2.txt';
-            await writeFileAsync(newFilePath, modifiedDatab);
+        const newFilePath = `.${filePath.split(".")[1]}_new.txt`;
+        console.log(newFilePath)
+        await writeFileAsync(newFilePath, modifiedData);
+        
              
 
             // console.log(File processed);
         
     } catch (error) {
-        console.error('An error occurred:');
+        console.error('An error occurred:' + error);
     }
 }
 
