@@ -18,6 +18,7 @@ const processEmployeeData = (filePath) => {
     const workbook = xlsx.readFile(filePath);
     // console.log(workbook);
     const sheetName = workbook.SheetNames[0];
+    console.log(sheetName)
     const worksheet = workbook.Sheets[sheetName];
 
     const jsonData = xlsx.utils.sheet_to_json(worksheet);
