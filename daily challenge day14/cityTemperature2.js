@@ -25,10 +25,12 @@ async function selectCity(path) {
 async function temperature(path) {
   try {
     const city = await selectCity(path);
+    console.log(city)
     const cityCord = cities.find(
       (cityName) => cityName.name.toLowerCase() == city.toLowerCase()
     );
-    // console.log(cityCord)
+
+    console.log(cityCord)
     const { lat, lng } = cityCord;
     // console.log(lat + " " + lng);
     const response = await fetch(
@@ -36,9 +38,9 @@ async function temperature(path) {
     );
     // console.log(response)
     const data = await response.json();
-    await fs.unlink(path);
+    await fs.unlink(`${cityCord.name.toLowerCase()}.txt`);
     // console.log(cityCord.name + ": " +data["current_weather"].temperature);
-    const newPath = `${path.split(".")[0]}_new.txt`;
+    const newPath = `${cityCord.name.toLowerCase()}.txt`;
     await fs.writeFile(
       newPath,
       cityCord.name + ": " + data["current_weather"].temperature
@@ -50,4 +52,4 @@ async function temperature(path) {
 }
 
 // const city = selectRandomCity(cities);
-temperature("2.txt");
+temperature("index.txt");
