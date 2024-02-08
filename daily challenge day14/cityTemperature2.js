@@ -36,17 +36,24 @@ async function temperature(path) {
     const response = await fetch(
       `https://api.open-meteo.com/v1/forecast?latitude=${lat}&longitude=${lng}&current_weather=true`
     );
+
     // console.log(response)
     const data = await response.json();
-    await fs.unlink(`${cityCord.name.toLowerCase()}.txt`);
+        const newPath = `${cityCord.name.toLowerCase()}.txt`;
+
+    try {
+      await fs.unlink(`${cityCord.name.toLowerCase()}.txt`);
+    } catch {
+     await fs.writeFile(newPath,"") 
+    }
+    
     // console.log(cityCord.name + ": " +data["current_weather"].temperature);
-    const newPath = `${cityCord.name.toLowerCase()}.txt`;
     await fs.writeFile(
       newPath,
       cityCord.name + ": " + data["current_weather"].temperature
     );
   } catch (err) {
-    console.error(err);
+    console.error(err.message);
   }
   // return data["current_weather"].temperature;
 }
