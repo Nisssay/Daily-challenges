@@ -1,12 +1,13 @@
 const fs = require("fs")
 
 function getAllPosts() {
-    let data = fs.readFileSync('posts.json')
+    let data = fs.readFileSync("C:/Users/hp/Desktop/arkx/challenges/week challenge 2/data.json");
     return JSON.parse(data)
 }
 
-function createPost(post) {
-    let data = getAllPosts()
-    data.push(post)
-    fs.writeFileSync('posts.json', JSON.stringify(data))
+function createPost(data) {
+    fs.writeFileSync("C:/Users/hp/Desktop/arkx/challenges/week challenge 2/data.json",JSON.stringify(data)
+    );
 }
+
+module.exports = {getAllPosts,createPost}

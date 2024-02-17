@@ -13,7 +13,7 @@ app.use((req, res, next) => {
 });
 
 app.use((err, req, res, next) => {
-  console.error(err.stack);
+  console.error(err.stack); 
   res.status(500).send("Something broke!");
 });
 
@@ -28,9 +28,7 @@ app.get("/products/search", (req, res) => {
     filteredProducts = filteredProducts.filter((product) =>
       product.name.toLowerCase().includes(q.toLowerCase())
     );
-  } else {
-    console.log("item not found");
-  }
+  } 
   if (minPrice) {
     filteredProducts = filteredProducts.filter(
       (product) => product.price >= parseFloat(minPrice)
