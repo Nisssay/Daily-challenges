@@ -1,0 +1,22 @@
+[
+  {
+    "Id": 1,
+    "username": "zakaria",
+    "password": "$2b$10$A3JmyQk2GERwl0AT9bWMgukpXvUaIJ1XeBkcBPLZ/Rk4uKtLhTRTm"
+  },
+  {
+    "Id": 2,
+    "username": "zakaria2",
+    "password": "$2b$10$U.l5lFZPmDWPHm8bFklT3eP5Uel5cnF.HBrptWQ/xi6OGHbhHbuWC"
+  },
+  {
+    "Id": 3,
+    "username": "zakaria3",
+    "password": "$2b$10$l5kYlgl6ddd9c1Zchq2B8eM99wnfCfQcxtFXfdZ/2mY6.esdKpoTa"
+  },
+  {
+    "Id": 4,
+    "username": "zakaria4",
+    "password": "$2b$10$S1ClElpkNl2I2oissNecl.h.1ENsh0or9mXpOTdnvXld0CgouTLpi"
+  }
+]

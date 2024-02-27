@@ -1,6 +1,5 @@
 const fs = require("fs");
 const { getAllPosts, createPost } = require("../models/post");
-const { normalize } = require("path");
 
 exports.addBlog = (req, res) => {
   const blogs = getAllPosts();
@@ -55,16 +54,4 @@ exports.delePost = (req, res) => {
   createPost(blogs);
   res.status(200).json({ msg: "Deleted Successfully", blogs });
 }
-// app.delete("/products/:id", (req, res) => {
-//   let productIndex = products.findIndex(
-//     (product) => product.id == req.params.id
-//   );
-//   if (productIndex !== -1) {
-//     products.splice(productIndex, 1);
-//     fs.writeFileSync("data.json", JSON.stringify(products));
-//     res.send("item deleted");
-//   } else {
-//     res.status(404).send("Product not found");
-//   }
-//   fs.writeFileSync("data.json", JSON.stringify(products));
-// });
+

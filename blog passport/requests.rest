@@ -1,0 +1,50 @@
+
+GET http://localhost:3000/posts
+
+
+###
+
+POST http://localhost:3000/posts
+Content-Type: application/json
+
+{
+    "Title" : "test",
+    "Content" : "testingContent"
+}
+
+###
+
+PUT http://localhost:3000/posts/532
+Content-Type: application/json
+
+{
+    "Title" : "updated",
+    "Content" : "updated"
+}
+
+###
+
+Delete http://localhost:3000/posts/532
+
+
+
+###
+POST http://localhost:3000/login
+Content-Type: application/json
+
+{
+    "username" : "zakaria5",
+    "password" : "12345678"
+}
+
+###
+GET http://localhost:3000/logout
+
+###
+POST http://localhost:3000/createuser
+Content-Type : application/json
+
+{
+    "username" : "zakaria5",
+    "password" : "12345678"
+}

@@ -1,0 +1,41 @@
+
+GET http://localhost:3000/posts
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJJZCI6MCwidXNlcm5hbWUiOiJ6YWthcmlhIiwicGFzc3dvcmQiOiIxMjM0NTY3OCIsImlhdCI6MTcwODg5MTc4MCwiZXhwIjoxNzA4ODk1MzgwfQ.kUfXP-UNZQXSFYyfyE3qKTcGTXkMdD_f20PDH62vtqQ
+
+###
+
+POST http://localhost:3000/posts
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJJZCI6MSwidXNlcm5hbWUiOiJ6YWthcmlhIiwicGFzc3dvcmQiOiIxMjM0NTY3OCIsImlhdCI6MTcwODYzMDU0NSwiZXhwIjoxNzA4NjM0MTQ1fQ.O1VSOI_sGZPbY6rg9vSQoYhn1Mo1rxi-_SqiyhCM0aY
+Content-Type: application/json
+
+{
+    "Title" : "testingTitle",
+    "Content" : "testingContent"
+}
+
+###
+
+PUT http://localhost:3000/posts/684
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJJZCI6MSwidXNlcm5hbWUiOiJ6YWthcmlhIiwicGFzc3dvcmQiOiIxMjM0NTY3OCIsImlhdCI6MTcwODYzMDU0NSwiZXhwIjoxNzA4NjM0MTQ1fQ.O1VSOI_sGZPbY6rg9vSQoYhn1Mo1rxi-_SqiyhCM0aY
+Content-Type: application/json
+
+{
+    "Title" : "updated",
+    "Content" : "updated"
+}
+
+###
+
+Delete http://localhost:3000/posts/684
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJJZCI6MSwidXNlcm5hbWUiOiJ6YWthcmlhIiwicGFzc3dvcmQiOiIxMjM0NTY3OCIsImlhdCI6MTcwODYzMDU0NSwiZXhwIjoxNzA4NjM0MTQ1fQ.O1VSOI_sGZPbY6rg9vSQoYhn1Mo1rxi-_SqiyhCM0aY
+
+
+
+###
+POST http://localhost:3000/login
+Content-Type: application/json
+
+{
+    "username" : "zakaria",
+    "password" : "12345678"
+}

@@ -15,7 +15,6 @@ app.use((err, req, res, next) => {
   res.status(500).send("Something broke!");
 });
 
-app.use(express.json());
 app.use("/blog",blogRouter)
 
 app.listen(PORT, () => {
