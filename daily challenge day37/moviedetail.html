@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../Day34/reset.css">
+    <link rel="stylesheet" href="header.css">
+    <link rel="stylesheet" href="footer.css">
+    <link rel="stylesheet" href="moviedetail.css">
+</head>
+<body>
+        <header >
+            <div class="flex-column-container">
+            <nav class="navbar">
+            <div class="left-nav">
+                <h1><a href="#" id="navLogo">Logo</a></h1>
+                <a href="/Day34/index.html">Home</a>
+                <a href="/Day34/movies.html">Movies</a>
+                <a href="/Day34/moviesDetail.html">Movie Details</a>
+                <a href="/Day34/contactUs.html">Contact Us</a>
+                <a href="/Day34/pricing.html">Pricing</a>    
+            </div>
+            <div class="right-nav">
+                <!-- <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352a144 144 0 1 0 0-288 144 144 0 1 0 0 288z"/></svg> -->
+                <input class="inputsearch" type="text" placeholder="Find Movies ..." >
+                <select class="selectlanguage">
+                    <option value="En">En</option>
+                    <option value="Fr">Fr</option>
+                    <option value="Ar">Ar</option>
+                </select>
+                <button class="btn" type="button">subsribe</button>
+            </div>
+            </nav>
+         </div>
+        </header>
+        <main>
+        <section>
+            <div class="moviedetail">
+                <div class="movieimg"><img src="../Day34/images/night.jfif" alt=""></div>
+                
+                <div class="moviedesc">
+                <h2 class="title"> Night Of The Living Dead</h2>
+                <p class="review">This is a review</p>
+                <p class="time">2020  1 hr 25 min  TV-MA</p>
+                <p class="genre"> Horror . Horror</p>
+                <div class="btn-container">
+                    <div class="btn-flex-container">
+                    <button class="button btn-1" type="button">Likes</button>
+                    <button class="button btn-1" type="button">Share</button>
+                    <button class="button btn-1" type="button">Watchlist</button>
+                    </div>
+                    <div class="second-row">
+                    <button class="button btn-1" type="button">Download video</button>
+                    </div>
+                </div>
+                <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas quos nihil nobis, nisi at natus modi dolorem consequuntur exercitationem hic.</p>
+                <h4>Show More</h4> 
+                <p>cast 1</p>
+                <p> cast 2</p>
+                <div class="btn-flex-container">
+                    <button class="button btn-2" type="button">Watch Now</button>
+                    <button class="button btn-1" type="button">Play Trailer</button>
+                </div>
+            </div>
+            </div>
+            <div class="grid-container">
+                <div class="images" id="img1">
+                    <img  src="../Day34/images/night.jfif" alt="">
+                </div>
+                <div class="images" id="img2">
+                    <img  src="../Day34/images/night.jfif" alt="">
+                </div>
+                <div class="images" id="img3">
+                    <img  src="../Day34/images/night.jfif" alt="">
+                </div>
+                <div class="images" id="img4">
+                    <img  src="../Day34/images/night.jfif" alt="">
+                </div>
+                <div class="images" id="img5">
+                    <img  src="../Day34/images/night.jfif" alt="">
+                </div>
+            
+            </div>
+        </section>
+        </main>
+        <footer >
+          <div class="footer-flex-container">
+            <div class="flex-container">
+            <div class="flex-item">
+            <h2 ><u class="logo-footer">Logo</u></h2>
+            </div>
+            <div class="flex-item">
+            <p>connect with us</p>
+            <div class="flex-icons">
+            <a href="#"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M512 256C512 114.6 397.4 0 256 0S0 114.6 0 256C0 376 82.7 476.8 194.2 504.5V334.2H141.4V256h52.8V222.3c0-87.1 39.4-127.5 125-127.5c16.2 0 44.2 3.2 55.7 6.4V172c-6-.6-16.5-1-29.6-1c-42 0-58.2 15.9-58.2 57.2V256h83.6l-14.4 78.2H287V510.1C413.8 494.8 512 386.9 512 256h0z"/></svg></a>
+            <a href="#"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M459.4 151.7c.3 4.5 .3 9.1 .3 13.6 0 138.7-105.6 298.6-298.6 298.6-59.5 0-114.7-17.2-161.1-47.1 8.4 1 16.6 1.3 25.3 1.3 49.1 0 94.2-16.6 130.3-44.8-46.1-1-84.8-34.2-98.1-72.8 6.5 1 13 1.6 19.8 1.6 9.4 0 18.8-1.3 27.6-3.6-48.1-9.7-84.1-52-84.1-103v-1.3c14 7.8 30.2 12.7 47.4 13.3-28.3-18.8-46.8-51-46.8-87.4 0-19.5 5.2-37.4 14.3-53 51.7 63.7 129.3 105.3 216.4 109.8-1.6-7.8-2.6-15.9-2.6-24 0-57.8 46.8-104.9 104.9-104.9 30.2 0 57.5 12.7 76.7 33.1 23.7-4.5 46.5-13.3 66.6-25.3-7.8 24.4-24.4 44.8-46.1 57.8 21.1-2.3 41.6-8.1 60.4-16.2-14.3 20.8-32.2 39.3-52.6 54.3z"/></svg></a>
+            <a href="#"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3 .3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-34.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5 .3-6.2 2.3zm44.2-1.7c-2.9 .7-4.9 2.6-4.6 4.9 .3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 34.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3 .7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3 .3 2.9 2.3 3.9 1.6 1 3.6 .7 4.3-.7 .7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3 .7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3 .7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg></a>
+            </div>
+            </div>
+            <div class="flex-item">
+            <p>Help</p>
+            <ul>
+                <li><a href="#">My Account</a></li>
+                <li><a href="#">Customer Support</a></li>
+                <li><a href="#">Contact Us</a></li>
+                <li><a href="#">About Us</a></li>
+            </ul>
+            </div>
+            <div class="flex-item">
+            <p>Download Movies mobile app</p>
+            <img src="/Day34/images/applestore.png" width="120" height="70">
+            <br>
+            <img src="/Day34/images/googleplay.png" width="120" height="70">       
+            </div>
+          </div>
+          <hr>
+            <div class="bottom-footer">
+            <div>
+            <p>Copyright 2023 Movie APP.All rights reserved</p>
+            </div>
+            <div>
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms of Service</a>
+            </div>
+            </div>
+          </div>
+        </footer>
+</body>
+</html>

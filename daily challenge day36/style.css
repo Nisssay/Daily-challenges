@@ -1,0 +1,33 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    display: grid;
+    grid-template-areas:
+        "header header"
+        "sidebar main";
+    grid-template-columns: 1fr 3fr; /* Sidebar takes up 1 fraction, main content 3 fractions */
+    grid-template-rows: auto 1fr; /* Auto for header height, 1 fraction for the rest */
+    height: 100vh; /* Full viewport height */
+}
+
+.header {
+    grid-area: header;
+    background-color: #ffcccc;
+    padding: 20px;
+    text-align: center;
+}
+
+.sidebar {
+    grid-area: sidebar;
+    background-color: #ccffcc;
+    padding: 20px;
+}
+
+.main {
+    grid-area: main;
+    background-color: #ccccff;
+    padding: 20px;
+}

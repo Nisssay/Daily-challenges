@@ -1,0 +1,50 @@
+/* Base styles */
+body,
+h1,
+h2,
+p {
+    margin: 0;
+    padding: 0;
+}
+
+/* Styles for the header */
+header {
+    background-color: #f0f0f0;
+    padding: 20px;
+    text-align: center;
+}
+
+/* General styles for sections */
+section {
+    padding: 20px;
+}
+
+/* Styles for headings */
+h1,
+h2 {
+    color: #333;
+    margin-bottom: 10px;
+}
+
+/* Styling paragraphs to demonstrate the box model */
+p {
+    background-color: #e7e7e7;
+    padding: 20px;
+    border: 2px solid #ccc;
+    margin: 20px 0;
+}
+
+img {
+    display: block;
+    margin: 20px auto;
+    border: 5px solid #007bff;
+    padding: 10px;
+}
+
+/* Styles for the footer */
+footer {
+    background-color: #f0f0f0;
+    text-align: center;
+    padding: 10px;
+    margin-top: 20px;
+}

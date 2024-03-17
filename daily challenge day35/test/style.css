@@ -1,0 +1,28 @@
+.container {
+    padding: 24px;
+    display: flex;
+    gap: 16px;
+}
+
+.card {
+    padding: 16px;
+    border: 1px solid #222;
+}
+
+.title, .price {
+    text-align: center;
+}
+
+.btn {
+    width: 100%;
+    border: none;
+    cursor: pointer;
+    background: #222;
+    color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.options li {
+    list-style-image: url('icons8-done-16.png');
+}

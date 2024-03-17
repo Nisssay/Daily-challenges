@@ -1,0 +1,20 @@
+:root {
+  --primary-color: blue;
+  --background-color: white;
+  --text-color: black;
+}
+
+.dark-theme {
+  --background-color: #333;
+  --text-color: white;
+}
+
+.light-theme {
+  --background-color: #fff;
+  --text-color: black;
+}
+
+body {
+  background-color: var(--background-color);
+  color: var(--text-color);
+}

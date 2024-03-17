@@ -1,0 +1,31 @@
+* {
+    box-sizing: border-box;
+    /* Apply border-box to all elements */
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+}
+
+.box {
+    width: 200px;
+    padding: 20px;
+    border: 5px solid #333;
+    margin-bottom: 20px;
+}
+
+.content-box {
+    box-sizing: content-box;
+    /* Default value, padding and border added to the width and height */
+}
+
+.border-box {
+    /* Padding and border are included within the declared width and height */
+}
+
+/* Add some basic styling for clarity */
+.box {
+    background-color: #f0f0f0;
+    text-align: center;
+}

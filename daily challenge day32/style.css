@@ -1,0 +1,40 @@
+/* Pseudo-Class: Changes the color of links when hovered over
+
+a:hover {
+    color: red;
+    text-decoration: underline;
+}
+
+/* Pseudo-Class: Indicates a selected button with a different background color */
+
+/* button:active {
+    background-color: #007bff;
+    color: white;
+}
+
+input:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 8px rgba(0, 123, 255, 0.8);
+}  */
+
+Pseudo Classes
+/* Pseudo-Element: Creates a drop cap for the first letter of paragraphs */
+
+p::first-letter {
+    font-size: 24px;
+    font-style: italic;
+    float: left;
+}
+
+/* Pseudo-Element: Adds a subtle shadow around images */
+
+img::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 0, 0, 0.2);
+    color: green;
+}

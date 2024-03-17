@@ -1,0 +1,37 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+}
+
+.container {
+    width: 80%;
+    /* Percentage-based width for responsive design */
+    margin: 0 auto;
+    /* Center the container */
+    background-color: #f0f0f0;
+    padding: 2rem;
+    /* Padding in rems for consistent spacing */
+}
+
+h1 {
+    font-size: 2em;
+    /* Font size in ems to scale with parent's font size */
+}
+
+p {
+    padding: 5%;
+    /* Percentage-based padding for flexible spacing */
+}
+
+button {
+    font-size: 1rem;
+    /* Font size in rems for consistent sizing */
+    padding: 0.5rem 1rem;
+    /* Padding in rems */
+    margin-top: 1rem;
+    /* Margin in rems for consistent spacing above the button */
+    border: none;
+    background-color: #333;
+    color: white;
+    cursor: pointer;
+}
